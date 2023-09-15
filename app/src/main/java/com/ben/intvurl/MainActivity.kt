@@ -2,6 +2,7 @@ package com.ben.intvurl
 
 import android.R
 import android.os.Bundle
+import android.util.Log
 import android.view.Window
 import android.view.WindowManager
 import android.widget.FrameLayout
@@ -39,6 +40,7 @@ class MainActivity : AppCompatActivity() {
 
 //        mAgentWeb.jsAccessEntrace.quickCallJs();
 
+        Log.e("-->","this is  from dev ")
 
     }
 }
