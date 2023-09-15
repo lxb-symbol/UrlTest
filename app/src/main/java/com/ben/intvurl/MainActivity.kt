@@ -42,5 +42,6 @@ class MainActivity : AppCompatActivity() {
 
         Log.e("-->","this is  from dev ")
 
+        Log.e("tag","from dev-s")
     }
 }
