@@ -1,12 +1,10 @@
 package com.ben.intvurl
 
-import android.R
 import android.os.Bundle
 import android.util.Log
 import android.view.Window
 import android.view.WindowManager
 import android.widget.FrameLayout
-import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.ben.intvurl.databinding.ActivityMainBinding
 import com.just.agentweb.AgentWeb
@@ -17,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
     private val targetUrl = "http://touping.saizhuge.com"
-    private lateinit var  mAgentWeb: AgentWeb
+    private lateinit var mAgentWeb: AgentWeb
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         requestWindowFeature(Window.FEATURE_NO_TITLE)
@@ -28,7 +26,7 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-    mAgentWeb=    AgentWeb.with(this)
+        mAgentWeb = AgentWeb.with(this)
             .setAgentWebParent(binding.flRoot, FrameLayout.LayoutParams(-1, -1))
             .useDefaultIndicator()
             .setSecurityType(AgentWeb.SecurityType.STRICT_CHECK)
@@ -39,6 +37,8 @@ class MainActivity : AppCompatActivity() {
             .go(targetUrl)
 
 //        mAgentWeb.jsAccessEntrace.quickCallJs();
+
+        Log.e("tag", "this is  main branch")
 
         Log.e("-->","this is  from dev ")
 
