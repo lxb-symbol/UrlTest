@@ -41,5 +41,6 @@ class MainActivity : AppCompatActivity() {
         Log.e("tag", "this is  main branch")
 
 
+        Log.e("tag","from dev-s")
     }
 }
