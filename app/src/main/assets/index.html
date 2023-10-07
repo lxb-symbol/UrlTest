@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="noindex,nofollow"> 
+    <title>郑州app开发制作,app定制开发-河南犇犇网络科技有限公司</title>
+    <meta name="description" content="河南犇犇网络科技有限公司是一家专业的app开发公司,为企业提供郑州安卓及IOS手机app开发服务,近500人专业团队,6000+app软件开发案例,实力有保障,欢迎实地考察！" />
+    <meta name="keywords" content="郑州app开发,郑州app制作,郑州app定制,郑州app开发公司,郑州app外包,郑州商城app开发,郑州手机软件开发,郑州直播app开发,郑州教育app开发" />
+    <link rel="stylesheet" href="https://benbenwangluo.com/s_css/style.css">
+    <link rel="stylesheet" href="https://benbenwangluo.com/s_css/animate.min.css">
+    <link rel="stylesheet" href="https://ttk-saas.oss-cn-beijing.aliyuncs.com/m2785/swiper@8.3.0.min.css">  
+    <script src="https://ttk-saas.oss-cn-beijing.aliyuncs.com/m2785/swiper@8.3.0.min.js"> </script>
+    <style>
+        body,html {
+            font-size: 13.3333333333vw;
+            height: 100vh;
+            background-image: url(https://ttk-saas.oss-cn-beijing.aliyuncs.com/m2785/touping_bg.png);
+            background-repeat:repeat ;
+        }
+        .vio video {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -9999;
+            object-fit: cover;
+            background: #000;
+        }
+        .swiper_bg{
+            position:relative;top: 48vh;height: 30vh;
+           }
+        .swiper-wrapper .swiper-slide{
+            align-items:center;display: flex;flex-direction:column;
+            justify-content: center;
+        }
+        .swiper-wrapper .swiper-slide .title{
+            font-size: 0.42rem;
+            font-weight: 550;
+            margin-top:-0.10rem ;
+        }
+        .swiper-wrapper .swiper-slide .content{
+            font-size: 0.2rem;
+            margin-top:0.10rem ;
+            font-weight: 500;
+        }
+        .benben_logo{
+            display: inline-block;
+            position: absolute;
+            width: 2.34rem;
+            height: 0.88rem;
+            background-image: url(https://ttk-saas.oss-cn-beijing.aliyuncs.com/m2785/touping_logo.png?v=123123);
+            background-position: center;
+            background-size: 100% 100%;
+            transform: translateX(-50%);
+            top:18vh;
+            left:50%;
+        }
+        .open_video{
+            position: absolute;
+            width: 1rem;
+            height: 0.3rem;
+            right: 0.1rem;
+            top:0.15rem;
+            background: transparent;
+            border: 0px;
+        }
+        .open_video_icon{
+            width: 0.8rem;
+            height: 0.2rem;
+            font-size: 0.16rem;
+            fill: #fff;
+        }
+        .close_video{
+            position: absolute;
+            width: 1rem;
+            height: 0.3rem;
+            right: 0.1rem;
+            top:0.15rem;
+            background: transparent;
+            border: 0px;
+            display: none;
+        }
+        .close_video_icon{
+            width: 0.8rem;
+            height: 0.2rem;
+            font-size: 0.16rem;
+            fill: #fff;
+        }
+        button:focus {
+            outline: none;
+            border: 2px solid #fff;
+            border-radius: 0.06rem;
+        }
+        .s_bg {
+    content: '';
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 48vh;height: 30vh;
+    background: url(https://benbenwangluo.com/s_img/bg.png) repeat;
+    z-index: -100;
+}
+    </style>
+</head>
+<body>
+<header>
+    <div class="vio">
+        <div class="ben_vo">
+            <video id="myVideo" width="" height="" autoplay muted loop >
+              <source src="./benben.mp4">
+            </video>
+        </div>
+        <button class="open_video" onclick="videoPlay()">
+            <svg class="open_video_icon"  t="1693035457107" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6289" width="128" height="128">
+                <path d="M192 320c-54.4 0-96 41.6-96 92.8V608c0 54.4 41.6 96 96 96h83.2l182.4 188.8c22.4 22.4 44.8 35.2 67.2 35.2 6.4 0 12.8 0 19.2-3.2 19.2-9.6 32-28.8 32-51.2v-224L233.6 320H192z m758.4 489.6l-57.6-54.4C934.4 681.6 960 598.4 960 512c0-115.2-41.6-227.2-118.4-316.8-12.8-12.8-32-16-44.8-3.2-12.8 12.8-16 32-3.2 44.8 64 76.8 102.4 176 102.4 275.2 0 70.4-19.2 137.6-51.2 195.2L752 617.6c9.6-35.2 16-70.4 16-105.6 0-73.6-22.4-144-67.2-204.8-9.6-16-28.8-19.2-44.8-6.4s-19.2 28.8-6.4 44.8c35.2 48 54.4 108.8 54.4 166.4 0 19.2-3.2 38.4-6.4 54.4L576 451.2V153.6c0-25.6-12.8-44.8-32-51.2-25.6-9.6-57.6 0-86.4 32L352 240 214.4 105.6c-12.8-12.8-32-12.8-44.8 0-12.8 12.8-12.8 32 0 44.8l736 704c6.4 6.4 12.8 9.6 22.4 9.6 9.6 0 16-3.2 22.4-9.6 12.8-12.8 12.8-32 0-44.8z" p-id="6290"></path>
+            </svg>
+        </button>
+        <button class="close_video" onclick="videoClose()">
+            <svg class="close_video_icon"  t="1693035832338" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4734" width="128" height="128"><path d="M526.432 924.064c-20.96 0-44.16-12.576-68.96-37.344L274.752 704H192c-52.928 0-96-43.072-96-96V416c0-52.928 43.072-96 96-96h82.752l182.624-182.624c24.576-24.576 47.744-37.024 68.864-37.024C549.184 100.352 576 116 576 160v704c0 44.352-26.72 60.064-49.568 60.064zM687.584 730.368a31.898 31.898 0 0 1-18.656-6.016c-14.336-10.304-17.632-30.304-7.328-44.672l12.672-17.344C707.392 617.44 736 578.624 736 512c0-69.024-25.344-102.528-57.44-144.928-5.664-7.456-11.328-15.008-16.928-22.784-10.304-14.336-7.04-34.336 7.328-44.672 14.368-10.368 34.336-7.04 44.672 7.328 5.248 7.328 10.656 14.464 15.968 21.504C764.224 374.208 800 421.504 800 512c0 87.648-39.392 141.12-74.144 188.32l-12.224 16.736c-6.272 8.704-16.064 13.312-26.048 13.312z" p-id="4735"></path><path d="M796.448 839.008a31.906 31.906 0 0 1-21.088-7.936c-13.28-11.648-14.624-31.872-2.976-45.152C836.608 712.672 896 628.864 896 512s-59.392-200.704-123.616-273.888c-11.648-13.312-10.304-33.504 2.976-45.184 13.216-11.648 33.44-10.336 45.152 2.944C889.472 274.56 960 373.6 960 512s-70.528 237.472-139.488 316.096c-6.368 7.232-15.2 10.912-24.064 10.912z" p-id="4736"></path></svg>
+        </button>
+        <div class="benben_logo"></div>
+        <div class="s_bg"></div>
+        <div class="swiper_bg">
+            <div class=" swiper swiper-container" style="margin:0 auto;color:#fff;height: 100%;">
+                <div class=" swiper-wrapper"  >
+                    <div class=" swiper-slide" >
+                        <div class="title ani"  swiper-animate-effect="slideInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">新一代数智化中台系统开拓者</div>
+                        <p class="content" data-scroll-reveal="enter right over 2.5s after 1.5s">数字化+智能化驱动  先进的生产力工具</p>
+                    </div>
+  <div class="swiper-slide" >
+                        <div class="title" >国内领先的无代码开发平台</div>
+                        <p class="content">快速构建定制化的应用程序  加速业务创新</p>
+                    </div>
+                    <div class="swiper-slide" >
+                        <div class="title" swiper-animate-effect="slideInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">全行业APP定制开发服务商</div>
+                        <p class="content">专业定制+专业解析+专业服务  客户的满意  就是我们的动力</p>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<script>
+    var video = document.getElementById("myVideo");
+    window.onload = function(){
+        document.getElementsByClassName('open_video')[0].focus()
+        // video.playbackRate=0.5;
+    }
+    function videoPlay() {
+        video.muted  = false;
+        document.getElementsByClassName('close_video')[0].style.display='block'
+        document.getElementsByClassName('open_video')[0].style.display='none'
+        document.getElementsByClassName('close_video')[0].focus()
+    };
+    function videoClose() {
+        video.muted  = true;
+        document.getElementsByClassName('close_video')[0].style.display='none'
+        document.getElementsByClassName('open_video')[0].style.display='block'
+        document.getElementsByClassName('open_video')[0].focus()
+    };
+    var swiper = new Swiper('.swiper', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+          delay: 6000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+</script>
+</body>
+</html>
